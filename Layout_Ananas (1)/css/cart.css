@@ -1,0 +1,113 @@
+.cart-Main {
+    padding: 30px 0;
+}
+.cart-left h3 {
+    color: #000;
+    background-color: #f1f1f1;
+    font-size: 23px;
+    margin-bottom: 20px;
+    padding: 5px 20px 5px 20px;
+    text-transform: uppercase;
+}
+.cart-right .card{
+    background-color: #cccccc;
+}
+
+.name-product {
+    font-size: 24px;
+    font-weight: bold;
+}
+.right-item .price,
+.right-item .status
+{
+    display: flex;
+    justify-content: end;
+}
+.price {
+    color: #f15c12;
+    font-size: 24px;
+    font-weight: 600;
+}
+.price-saleoff{
+    color: #808080;
+    font-size: 18px;
+}
+.status {
+    color: #f15c12;
+    font-size: 16px;
+    font-weight: 600;
+}
+.card-body-top,
+.card-body-bottom,
+.card-body-service{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.service-left {
+    width: 100%;
+    display: flex;
+    /* justify-content: start; */
+    gap: 120px;
+    align-items: flex-end;
+}
+.service-left > div{
+    max-width: 150px;
+    
+}
+.service-left > div > button {
+    padding: 8px 60px;
+}
+.service-right {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    row-gap: 12px;
+}
+.service-right> button{
+    padding-block: 12px;
+}
+.service-right .heart-btn{
+    background-color: #fff !important;
+    border: 1px solid #000;
+}
+.service-bottom > button {
+    padding: 12px 100px;
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cart-right h3{
+    color: #000;
+    font-size: 23px;
+    text-transform: uppercase;
+
+}
+.cart-body-right{
+    background-color: #f1f1f1;
+}
+.cart-body-price span{
+    font-size: 18px;
+    color: #808080;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.total-product-cart {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.total-btn {
+    background-color: #f15c12;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.product_cart {
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

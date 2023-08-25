@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        #main {
+            /* background-image: url('9bfh4.png'); */
+            background-image: url('/img/bg_comingsoon.jpg');
+            height: 800px;
+        } 
+        input{
+            border-color: #241071 !important;
+        } 
+            
+    </style>
+</head>
+<body>
+   
+
+        <!-- <input id="user" type="text" placeholder="Nhập tên đăng nhập">
+        <input id="pass" type="password" placeholder="Nhập Mật khẩu">
+        <h2 id="text"></h2>
+        <button onclick="c()">
+            Click
+        </button> -->
+        <section id="main" class="" ">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-md-10">
+                  <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                      <div class="col-md-6 col-lg-5 d-none d-md-block">
+                        <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                          alt="login form" 
+                          class="img-fluid" 
+                          style="border-radius: 1rem 0 0 1rem;" 
+                        /> -->
+                        <img src="/img/Store.svg"
+                        alt="login form" 
+                        class="img-fluid w-100" 
+                        style="border-radius: 1rem 0 0 1rem; object-fit: contain; width: 100%;"  
+                      />
+                    </div>
+                      <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                        <div class="card-body p-4 p-lg-5 text-black">
+          
+                          <form>
+    
+                            <h5 class="fw-normal mb-3 pb-3 text-uppercase" style="letter-spacing: 1px; font-size: 40px; font-weight: 700;">
+                                Login
+                            </h5>
+          
+                            <div class="form-outline mb-4">
+                              <input id="user" type="text" id="form2Example17" class="form-control form-control-lg"/>
+                              <label class="form-label" for="form2Example17">
+                                User
+                            </label>
+                            </div>
+          
+                            <div class="form-outline mb-4">
+                              <input 
+                              id="pass" 
+                              type="password"
+                               id="form2Example27" 
+                               class="form-control form-control-lg" 
+                               />
+                              <label class="form-label" for="form2Example27">
+                                Password
+                                </label>
+                            </div>
+          
+                            <div class="pt-1 mb-4">
+                              <button 
+                              class="btn btn-dark btn-lg btn-block" 
+                              type="button" 
+                              onclick="c()">
+                                Login
+                            </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    <script>
+            var a = document.getElementById('user')
+            var b = document.getElementById('pass')
+            var arr = [
+                {
+                    user: 'quocan',
+                    pass: 234
+                },
+                {
+                    user: 'quansida',
+                    pass: 123
+                },
+                {
+                    user: 'nghiamap',
+                    pass: 123
+                },
+                {
+                    user: 'minhthong',
+                    pass: 123
+                }
+            ]
+        function c() {
+            let checkUser = arr.find((x) => {
+                return x.user === a.value && x.pass === Number(b.value)
+            })
+            console.log(checkUser)
+
+            if(checkUser) {
+                alert("Đăng nhập thành công")
+                window.location = '/view/layout.html'
+            }
+            else {
+                alert("Đăng nhập thất bại")
+                a.focus()
+                a.style.border = '1px solid red'
+                b.style.border = '1px solid red'
+            }
+
+        }
+    </script>
+    <!-- <script src="js.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

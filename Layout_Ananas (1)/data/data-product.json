@@ -1,0 +1,232 @@
+[
+    {
+        "id": "AV00202",
+        "img":["product1-hover.jpg", "product1-normal.jpg"],
+        "name_product":"Urbas SC - Mule",
+        "color_product":"Dusty Blue",
+        "price": 620000,
+        "product_detail": 
+        [
+            {
+                "size": 35,
+                "quantity": 100
+            },
+            {
+                "size": 36,
+                "quantity": 120
+            },
+            {
+                "size": 37,
+                "quantity": 300
+            },
+            {
+                "size": 38,
+                "quantity": 400
+            },
+            {
+                "size": 39,
+                "quantity": 200
+            },
+            {
+                "size": 40,
+                "quantity": 150
+            },
+            {
+                "size": 41,
+                "quantity": 200
+            }
+        ]
+        
+    },
+    {
+        "id": "AV00197",
+        "img":["product2-hover.jpg", "product2-normal.jpg"],
+        "name_product":"Urbas SC - Mule",
+        "color_product":"Dark Purple",
+        "price":580000,
+        "product_detail":
+        [
+            {
+                "size": 35,
+                "quantity": 100
+            },
+            {
+                "size": 36,
+                "quantity": 120
+            },
+            {
+                "size": 37,
+                "quantity": 300
+            },
+            {
+                "size": 38,
+                "quantity": 400
+            },
+            {
+                "size": 39,
+                "quantity": 200
+            },
+            {
+                "size": 40,
+                "quantity": 150
+            },
+            {
+                "size": 41,
+                "quantity": 200
+            }
+        ]
+    },
+    {
+        "id": "AV00201",
+        "img":["product3-hover.jpg", "product3-normal.jpg"],
+        "name_product":"Urbas SC - Mule",
+        "color_product":"Foliage",
+        "price":580000,
+        "product_detail":
+                [
+            {
+                "size": 35,
+                "quantity": 100
+            },
+            {
+                "size": 36,
+                "quantity": 120
+            },
+            {
+                "size": 37,
+                "quantity": 300
+            },
+            {
+                "size": 38,
+                "quantity": 400
+            },
+            {
+                "size": 39,
+                "quantity": 200
+            },
+            {
+                "size": 40,
+                "quantity": 150
+            },
+            {
+                "size": 41,
+                "quantity": 200
+            }
+        ]
+    },
+    {
+        "id": "AV00196",
+        "img":["product4-hover.jpg", "product4-normal.jpg"],
+        "name_product":"Urbas SC - Mule",
+        "color_product":"Dusty Blue",
+        "price":580000,
+        "product_detail":
+                [
+            {
+                "size": 35,
+                "quantity": 100
+            },
+            {
+                "size": 36,
+                "quantity": 120
+            },
+            {
+                "size": 37,
+                "quantity": 300
+            },
+            {
+                "size": 38,
+                "quantity": 400
+            },
+            {
+                "size": 39,
+                "quantity": 200
+            },
+            {
+                "size": 40,
+                "quantity": 150
+            },
+            {
+                "size": 41,
+                "quantity": 200
+            }
+        ]
+    },
+    {
+        "id": "AV00200",
+        "img":["product5-hover.jpg", "product5-normal.jpg"],
+        "name_product":"URBAS SC - MULE",
+        "color_product":"CORNSILK",
+        "price":580000,
+        "product_detail":
+                [
+            {
+                "size": 35,
+                "quantity": 100
+            },
+            {
+                "size": 36,
+                "quantity": 120
+            },
+            {
+                "size": 37,
+                "quantity": 300
+            },
+            {
+                "size": 38,
+                "quantity": 400
+            },
+            {
+                "size": 39,
+                "quantity": 200
+            },
+            {
+                "size": 40,
+                "quantity": 150
+            },
+            {
+                "size": 41,
+                "quantity": 200
+            }
+        ]
+    },
+    {
+        "id": "AV00198",
+        "img":["product1-hover.jpg", "product1-normal.jpg"],
+        "name_product":"Urbas SC - Mule",
+        "color_product":"ALOE WASH",
+        "price":580000,
+        "product_detail":
+                [
+            {
+                "size": 35,
+                "quantity": 100
+            },
+            {
+                "size": 36,
+                "quantity": 120
+            },
+            {
+                "size": 37,
+                "quantity": 300
+            },
+            {
+                "size": 38,
+                "quantity": 400
+            },
+            {
+                "size": 39,
+                "quantity": 200
+            },
+            {
+                "size": 40,
+                "quantity": 150
+            },
+            {
+                "size": 41,
+                "quantity": 200
+            }
+        ]
+    }
+
+]

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div
+      class="nav-header justify-content-between py-1 px-5 position-fixed z-3 w-100 top-0 start-0 end-0">
+      <div class="col-sm col-lg d-flex gap-4 py-2">
+        <div class="ms-auto d-flex gap-2">
+          <img src="/img/icon_tra_cuu_don_hang.svg" alt=" " />
+          <a class="text-decoration-none header-nav" href=" ">
+            <span class="d-none d-md-block">Tra cứu đơn hàng</span>
+          </a>
+        </div>
+        <div class="d-flex gap-2">
+          <img src="/img/icon_tim_cua_hang.svg " alt=" " />
+          <a class="text-decoration-none header-nav" href=" ">
+            <span class="d-none d-md-block">
+              <span class="d-none d-md-block">Tìm đơn hàng</span>
+            </span>
+          </a>
+        </div>
+        <div class="d-flex gap-2">
+          <img src="/img/icon_heart_header.svg " alt=" " />
+          <a class="text-decoration-none header-nav" href=" ">
+            <span class="d-none d-md-block">Yêu thích</span>
+          </a>
+        </div>
+        <div class="d-flex gap-2">
+          <img src="/img/icon_dang_nhap.svg " alt=" " />
+          <a class="text-decoration-none header-nav" href=" ">
+            <span class="d-none d-md-block">Đăng nhập</span>
+          </a>
+        </div>
+        <div class="d-flex gap-2">
+          <img src="/img/icon_gio_hang.svg" alt=" " />
+          <a class="text-decoration-none header-nav" href=" ">
+            <span class="d-none d-md-block">Giỏ hàng</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-3 pb-4 pt-5">
+        <div class="col-lg-2 col-sm-6">
+          <img class="ms-3" src="/img/Logo_Ananas_Header.svg" alt="" />
+        </div>
+        <div class="col-lg-10 col-sm-6 pt-3">
+          <nav class="navbar navbar-expand-sm navbar">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mynavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto dropdown">
+                  <li class="header-item nav-item me-5 dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Sản phẩm
+                    </a>
+                    <ul class="dropdown-menu top-100 shadow-sm">
+                      <li><a class="dropdown-item" href="#">test</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-item nav-item me-5 dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Nam
+                    </a>
+                    <ul class="dropdown-menu top-100 shadow-sm">
+                      <li><a class="dropdown-item" href="#">test</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-item nav-item me-5 dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Nữ
+                    </a>
+                    <ul class="dropdown-menu top-100 shadow-sm">
+                      <li><a class="dropdown-item" href="#">test</a></li>
+                    </ul>
+                  </li>
+                  <li class="header-item nav-item me-5">
+                    <a class="nav-link" href="#">Sale off</a>
+                  </li>
+                  <img src="/img/DiscoverYOU.svg" alt="" />
+                </ul>
+                <form class="d-flex border border-2 py-1 rounded-2">
+                  <ion-icon
+                    name="search-outline"
+                    class="position-absolute header-icon_search ms-1"
+                  ></ion-icon>
+                  <input
+                    class="form-control form-control-sm w-100 ps-4 border border-0"
+                    type="text"
+                    placeholder="Tìm kiếm"
+                  />
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row" style="background-color: #f1f1f1">
+        <div class="col py-3 d-flex justify-content-evenly slider">
+          <span class="prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="#d5d5db"
+              class="bi bi-arrow-left-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+              />
+            </svg>
+          </span>
+          <a href="#" class="slide-text header-content"></a>
+          <span class="next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="#d5d5db"
+              class="bi bi-arrow-right-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <img
+          class="lowhigh px-0"
+          src="/img/LowHigh_Desktop-1920x1050.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="container">
+      <div class="row pt-5 mt-5 gx-5">
+        <div class="col-lg-6 col-sm-12">
+          <div class="card border border-0">
+            <img
+              class="card-img img-banner rounded-0"
+              src="/img/Banner_Sale-off-1.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <a class="card-link d-block title-card-1"> OUTLET SALE </a>
+              <p class="card-text">
+                Danh mục những sản phẩm bán tại "giá tốt hơn" chỉ được bán kênh
+                online - Online Only, chúng đã từng làm mưa làm gió một thời
+                gian và hiện đang rơi vào tình trạng bể size, bể số.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="card border border-0">
+            <img
+              class="card-img img-banner rounded-0"
+              src="/img/banner-phụ_2m-600x320 (1).jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <a class="card-link d-block title-card-1"> ALL BLACK IN BLACK </a>
+              <p class="card-text">
+                Mặc dù được ứng dụng rất nhiều, nhưng sắc đen lúc nào cũng toát
+                lên một vẻ huyền bí không nhàm chán
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" ng-app="myApp">
+      <div class="row py-5 mt-5 gx-3 gy-2" ng-controller="myCtrl">
+        <h3 class="text-center pb-4 text-uppercase" style="font-weight: 700">
+          Danh Mục Mua Hàng
+        </h3>
+
+        <div class="col-lg-3 col-sm-12" ng-repeat="catelogy in catelogys">
+          <div class="card border border-0">
+            <img
+              class="card-img rounded-0"
+              src="/img/{{catelogy.img}}"
+              alt=""
+            />
+            <div class="card-img-overlay black-bg">
+              <a
+                class="card-link d-block title-card-2 pb-3 text-uppercase"
+                ng-init="a = catelogy.heading ? catelogy.heading : 'heading'"
+              >
+                {{a}}
+              </a>
+              <a
+                class="card-text text-card mb-2"
+                ng-repeat="x in catelogy.link"
+                href="{{x.href}}"
+                >{{x.title}}</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <img class="lowhigh px-0" src="/img/Banner_Clothing.jpg" alt="" />
+      </div>
+    </div>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <h3 class="text-center py-3 text-uppercase" style="font-weight: 700">
+            Instagram
+          </h3>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <h3 class="text-center py-3 text-uppercase" style="font-weight: 700">
+            Tin Tức và Bài Viết
+          </h3>
+          <div class="row g-3">
+            <div class="col-lg-6 col-sm-6">
+              <div class="card border border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="/img/kvngang_mobile_web-300x160.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase">
+                    Urbas corrluray pack
+                  </h5>
+                  <p class="card-text">
+                    Urbas Corluray Pack đem đến lựa chọn “làm mới mình” với sự
+                    kết hợp 5 gam màu mang sắc thu; phù hợp với những người trẻ
+                    năng động, mong muốn thể
+                  </p>
+                  <a class="card-link card-link-product" href="">Đọc thêm</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="card border border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="/img/Mobile_Blog-1980s_0-300x160.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase">VINTAS SAIGON 1980s</h5>
+                  <p class="card-text">
+                    Với bộ 5 sản phẩm, Vintas Saigon 1980s Pack đem đến một sự
+                    lựa chọn “cũ kỹ thú vị” cho những người trẻ sống giữa thời
+                    hiện đại nhưng lại yêu
+                  </p>
+                  <a class="card-link card-link-product" href="">Đọc thêm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3 pt-3">
+            <div class="col-lg-6 col-sm-6">
+              <div class="card border border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="/img/peeping_pattas01-300x160.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase">
+                    SNEAKER FEST VIETNAM VÀ SỰ KẾT HỢP
+                  </h5>
+                  <p class="card-text">
+                    Việc sử dụng dáng giày Vulcanized High Top của Ananas trong
+                    thiết kế và cảm hứng bắt nguồn từ linh vật Peeping - đại
+                    diện cho tinh thần xuyên
+                  </p>
+                  <a class="card-link card-link-product" href="">Đọc thêm</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="card border border-0">
+                <img
+                  class="card-img-top rounded-0"
+                  src="/img/shoes-anatomy-thumbnail-300x160.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase">
+                    "GIẢI PHẪU" GIÀY VULCANIZED
+                  </h5>
+                  <p class="card-text">
+                    Trong phạm vi bài viết ngắn, hãy cùng nhau tìm hiểu cấu tạo
+                    giày Vulcanized Sneaker - loại sản phẩm mà Ananas đã chọn
+                    làm "cốt lõi" để theo đuổi trong
+                  </p>
+                  <a class="card-link card-link-product" href="">Đọc thêm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-2">
+        <div class="row justify-content-center">
+          <button
+            type="button"
+            class="btn btn-dark text-uppercase rounded-0"
+            style="width: 200px; font-weight: 500"
+          >
+            Muốn xem nữa
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row py-5">
+          <div class="col-lg-3 col-sm-12">
+            <div class="card border border-0 bg-body-emphasis" style="">
+              <img src="/img/Store.svg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <a
+                  href="#"
+                  class="btn btn-dark text-uppercase rounded-0 w-100"
+                  style="background-color: #f15e2c"
+                  >Muốn xem nữa</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-sm-6">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <h4 class="footer-title">Sản phẩm</h4>
+                <ul class="nav flex-column pt-1">
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#">Giày Nam</a>
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#">Giày Nữ</a>
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#"
+                      >Thời trang & Phụ kiện</a
+                    >
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#">Sale-off</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <h4 class="footer-title">VỀ CÔNG TY</h4>
+                <ul class="nav flex-column pt-1">
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#"
+                      >Dứa tuyển dụng</a
+                    >
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#"
+                      >Liên hệ nhượng quyền</a
+                    >
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#">Về Ananas</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <h4 class="footer-title">HỖ TRỢ</h4>
+                <ul class="nav flex-column pt-1">
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#">FAQs</a>
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#"
+                      >Bảo mật thông tin
+                    </a>
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#"
+                      >Chính sách chung</a
+                    >
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#"
+                      >Tra cứu đơn hàng</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <h4 class="footer-title">LIÊN HỆ</h4>
+                <ul class="nav flex-column pt-1">
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#"
+                      >Email góp ý</a
+                    >
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#">Hotline</a>
+                  </li>
+                  <li class="nav-item footer-pos">
+                    <a class="nav-link py-1 footer-text" href="#"
+                      >0963 429 749</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row pt-3 gy-5">
+              <div class="col-lg-3 col-sm-6">
+                <h4 class="footer-title">ANANAS SOCIAL</h4>
+                <div class="img-icon">
+                  <img src="/img/icon_instagram.svg" alt="" />
+                  <img src="/img/icon_facebook.svg" alt="" />
+                  <img src="/img/icon_youtube.svg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <h4 class="footer-title">ĐĂNG KÝ NHẬN MAIL</h4>
+                <div class="form-mail">
+                  <input class="form-control rounded-0 w-75" type="text" />
+                  <img src="/img/arrow_right.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <img
+                  src="/img/Logo_Ananas_Footer.svg"
+                  alt=""
+                  class="w-100 object-fit-cover"
+                />
+              </div>
+            </div>
+            <div class="row pt-5">
+              <div class="col-lg-3 col-sm-12">
+                <img src="/img/icon_bocongthuong.png" alt="" />
+              </div>
+              <div class="col-lg-9 col-sm-12 pt-4 footer-copy">
+                Copyright © 2022 Ananas. All rights reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/js.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN "
+      crossorigin="anonymous "
+    ></script>
+  </body>
+</html>

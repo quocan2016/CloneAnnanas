@@ -1,0 +1,198 @@
+.nav-header {
+    background-color: #303030;
+}
+
+.header-nav {
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.header-nav:hover {
+    color: coral;
+}
+
+.header-item a:hover {
+    color: coral;
+}
+
+.header-item a {
+    font-size: 23px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-icon_search {
+    padding-top: 9px;
+}
+
+.header-content {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0.5mm;
+    text-decoration: none;
+}
+
+.black-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.title-card-1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+.title-card-2 {
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-top: 10%;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.img-banner {
+    width: auto;
+    height: 344px;
+}
+
+.text-card {
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.title-card-2 :hover {
+    color: coral;
+}
+
+.card-link-product {
+    color: coral;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #4c4c4c;
+}
+
+.footer-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-pos>.footer-text {
+    padding-left: 0;
+    color: #cccc;
+}
+
+.img-icon {
+    display: flex;
+    gap: 8px;
+}
+
+.form-mail {
+    display: flex;
+    gap: 4px;
+}
+
+.footer-copy {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #808080;
+}
+
+#products .card img.img-hover.img-out ~ button.btn {
+    padding-inline: 40px;
+    padding-block: 8px;
+    border-radius: 0.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transition: display 0.3s linear; */
+    z-index: 3;
+    display: none;
+}
+
+#products .card:hover img.img-hover.img-out {
+    animation: fadedLess 0.4s linear;
+    
+}
+
+#products .card:hover img.img-hover.img-out ~ button.btn {
+    display: block;
+    top: 85%;
+    animation: swipeUp 0.6s ease-out;
+}
+
+.slider svg:hover {
+    fill: #000;
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider .prev {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider .next {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+@keyframes swipeUp {
+    0% {
+        opacity: 0;
+    } 
+    30% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    80% {
+        top: 95%;
+        opacity: 0.3;
+    } 
+    90% {
+        top: 90%;
+        opacity: 0.5;
+    } 
+    100% {
+        top: 85%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadedLess {
+    from {
+        filter: blur(7px);
+    } to {
+        filter: blur(0);
+    }
+}
